@@ -60,3 +60,9 @@ async def bot_support(e):
 async def repo_is_here(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
         await e.edit("https://github.com/baalajimaestro/Telegram-UserBot/")
+        
+        
+@register(outgoing=True, pattern="^.fuck")
+async def fuck(e):
+    if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
+        await e.edit("Abe Gandu, Teri Gand Ke CHhed Ka Diameter Badh Gaya ;_;")        
